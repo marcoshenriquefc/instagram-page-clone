@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+#body-main{
+    display: flex;
+    height: 100vh;
+}
+
+.screen{
+    width: 50vw;
+    height: 100%;
+}
+
+
+
+/*=====================================================
+
+                    LADO DA IMAGEM
+
+=====================================================*/
+#left{
+    display: flex;
+
+    align-content: center;
+    justify-content: end;
+
+    padding-right: 10px;
+}
+
+#left #cell{
+    display: flex;
+
+    align-items: center;
+    justify-content: end;
+
+    z-index: 10000;
+}
+
+#left #cell .mockup{
+    position: absolute;
+    height: 530px;
+}
+
+#left #cell2{
+    display: flex;
+
+    align-items: center;
+    justify-content: end;
+
+}
+#cell2 .img-mockup{
+    position: absolute;
+
+    margin:5px 20px 0 0;
+    height: 370px;
+}
+
+
+
+/*=====================================================
+
+                    LADO DO LOGIN
+
+=====================================================*/
+#right{
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 10px;
+
+    align-items: start;
+    justify-content: center;
+}
+
+.login{
+    background-color: white;
+    color: #a0a0a0;
+
+    padding: 10px;
+    margin-bottom:20px ;
+    
+    width: 330px;
+
+    border: 1px lightgray solid;
+    margin: 5px 0;
+}
+
+.login a{
+    color: #0089e4;
+
+    text-decoration: none;
+}
+
+.login img{
+    display: block;
+
+    margin: 0 auto;
+    padding: 15px 0 30px 0;
+    width: 170px;
+} 
+
+#up input[type='text'], [type='password']{
+    display: block;
+    width: 70%;
+    font-size: 0.75rem;
+
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 10px;
+
+    border: solid 1px lightgray;
+    border-radius: 2px;
+}
+#up input[type='text']:focus, [type='password']:focus{
+    border: 1px solid gray;
+    outline: none;
+}
+
+#up button{
+    display: block;
+    background-color: #0095f6;
+    color: white;
+    font-size: 0.9rem;
+
+    width: calc(70% + 20px);
+
+    margin: 0 auto;
+    padding: 5px;
+    margin-top: 20px;
+
+    border: 0;
+    border-radius: 3px;
+
+    cursor: pointer;
+}
+
+#up .or{
+    display: flex;
+    margin: 20px 0;
+
+    font-size: 0.9rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    text-align: center;
+
+    justify-content: center;
+}
+#up .or::after, .or::before{
+    content: "";
+    display: flex;
+
+    margin: 0 15px;
+    align-self: center;
+
+    background-color: #dadada;
+    width: 30%;
+    height: 1px;
+} 
+
+#up footer{
+    text-align: center;
+}
+
+#up .fb-login{
+    display: inline-block;
+    font-size: 0.9rem;
+    color: rgb(40, 16, 146);
+
+    margin-bottom: 20px;
+}
+
+#up #forgot{
+    font-size: 0.7rem;
+
+    margin-bottom: 20px;
+}
+
+#down{
+    text-align: center;
+    padding: 20px 10px;
+    color: rgb(43, 43, 43);
+    font-size: 0.9rem;
+}
+
+
+
+#last{
+    width: 350px;
+    text-align: center;
+}
+#last p{
+    font-size: 0.8rem;
+}
+
+#app{
+    display: flex;
+    justify-content: center ;
+}
+
+.instal{
+
+    cursor: pointer;
+    margin-top: 10px;
+    width: 120px;
+}
+
+.instal:nth-child(1){
+    margin-right: 20px;
+}
+
+
+
+
+
+
+#rodape{
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 0.7em;
+
+    margin-top: 20px;
+    padding-bottom: 60px;
+
+    color: rgba(var(--f52,142,142,142),1);
+    align-items: center;
+}
+
+
+#rodape nav ul{
+    display: flex;
+
+    list-style: none;
+}
+#rodape nav ul li{
+    margin-left: 20px;
+}
+
+#rodape section{
+    
+    display: flex;
+
+    margin-top: 20px;
+}
+#rodape section a{
+    text-decoration: none;
+    color: rgba(var(--f52,142,142,142),1);
+}
+#rodape section a::after{
+    content: "^";
+    display: inline-block;
+
+    margin-left:5px;
+    transform: rotate(180deg);
+}
+#rodape section p{
+    margin-right: 30px;
+}
+
